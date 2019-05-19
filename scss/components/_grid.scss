@@ -1,0 +1,25 @@
+//==============================================================================
+//Grid
+//==============================================================================
+
+.grid__row {
+	@include flex;
+	text-align: left;
+	padding: em($padding-sm) 0;
+	margin-top: em($margin-lg);
+	@include mq(medium) {
+		padding: em($padding-sm) em($padding-lg);
+		text-align: center;
+	}
+}
+
+// Set max-width for grid container
+
+@include mq(medium) {
+	max-width: $g-cont-max-w;
+}
+
+.centered {
+	@include mq(medium) {
+	margin: auto;}
+}

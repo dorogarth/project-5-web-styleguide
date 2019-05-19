@@ -1,0 +1,28 @@
+//==============================================================================
+//Base styles
+//==============================================================================
+
+.container {
+	font-family: $base__font-family;
+	font-size: $base__font-size;
+	line-height: ($base__line/$base__font-size);
+	color: $base__font-color;
+	margin: em($margin-xl) em($margin-md);
+	@include mq(medium) {
+	  font-size: 14px;
+		max-width: 1100px;
+		margin: em($margin-xl);}
+}
+
+ul {
+  padding-inline-start: 0px;
+  line-height: 2.5em;
+  text-align: center;
+    @include mq(medium) {
+    line-height: 1.5em;
+  }
+}
+
+p {
+	text-align: left;
+}

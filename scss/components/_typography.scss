@@ -1,0 +1,26 @@
+//==============================================================================
+//Typography
+//==============================================================================
+
+.headline {
+
+	&--primary {
+	  @extend %hdln-prim;
+	  }
+
+	&--secondary {
+	  @extend %hdln-sec;
+	  }
+}
+
+.blockquote {
+	border-left: em($border-sm) solid $border-color-primary;
+	text-align: left;
+	font-size: $bq-font-size;
+	padding-left: em($padding-md);
+	font-style: $bq-font-style;
+}
+
+.link {
+	@extend %link;
+}

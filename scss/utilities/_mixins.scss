@@ -1,0 +1,79 @@
+//==============================================================================
+//Mixins
+//==============================================================================
+
+// Calculate em values
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+// BEM selectors creation
+
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+// Grid columns
+
+@mixin g-columns {
+		@for $i from 1 through $g-col-count {
+		$context:	g-context($g-col-width, $g-col-count, $g-gutter-width);
+		$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+		//Generate column modifier classes
+		&--#{$i} {
+			width: percentage($target / $context);
+			@content;
+		}
+	}
+}
+
+// Grid col style
+
+@mixin themeColors($map) {
+	@each $name, $color in $map {
+		&#{$name} {
+			background-color: $color;
+			@content;
+		}
+	}
+} 
+
+// Flexbox
+
+@mixin flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include mq(medium) {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+// Media queries
+
+@mixin mq($break) {
+	@if $break == "small"	{
+		@media	(min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+			@content;
+		}
+	}
+	@else if $break == "medium" {
+		@media	(min-width: $breakpoint-md + 1) {
+			@content;
+		}
+	}
+	@else	{
+		@error "Oh no! No value could be retrieved for '#($break)'."
+	}
+}

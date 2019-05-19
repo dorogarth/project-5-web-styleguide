@@ -1,0 +1,113 @@
+//==============================================================================
+//Global config
+//==============================================================================
+
+
+//Text
+
+$base__font-color				: #808687;
+$base__font-family			: "Helvetica Neue", sans-serif;
+$base__font-size				: 16px;
+$base__line							: 24px;
+$base__font-light				: 300;
+$hdln-primary-font-size	: 2em;
+$hdln-line							:	2.2em;
+$hdln-sec-font-size			: 1.1em;
+
+
+//Colors
+
+//Descriptive colors
+
+$color-malachite	: #58E1C1;
+$color-grey				: #CDCDCD;
+$color-malibu			: #51DDFC;
+
+//Color usage
+
+$color-primary		: $color-malachite;
+$color-secondary	: $color-grey;
+
+
+//Button color map
+
+$btn-theme-colors: (
+	'default'	: $color-malibu,
+	'success'	: #63CC82,
+	'error'		: #E4757A,
+	'warning'	: #FD7856,
+	'info'		: #927BC1,
+);
+
+
+//Grid color map
+
+$grid-theme-colors: (
+	'col--3'	:	#DEB2EE,
+	'col--4'	: $color-malibu,
+	'col--5'	: #88D9A0,
+	'col--6'	:	#3FABCA,
+	'col--7'	:	#EC9FA3,
+	'col--8'	:	#FD9F85,
+	'col--12'	:	$color-malachite,
+);
+
+
+//Borders
+
+$border-xs						:	2px;
+$border-sm						:	5px;
+$border-radius				:	5px;
+$border-color-primary	:	$color-primary;
+$border-color-imgs		: $color-grey;
+
+
+//Margins
+
+$margin-xs	:	5px;
+$margin-sm	:	10px;
+$margin-md	:	20px;
+$margin-lg	:	30px;
+$margin-xl	:	50px;
+
+
+//Padding
+
+$padding-xs	:	5px;
+$padding-sm	:	10px;
+$padding-md	:	20px;
+$padding-lg	:	30px;
+$padding-xl	:	50px;
+
+
+//Grid
+
+$g-col-width		:	65px;
+$g-gutter-width	:	20px;
+$g-col-count		:	12;
+$g-cont-max-w		:	1050px;
+
+
+//Buttons
+
+$btn-font-color				:	white; // also used for navigation elements
+$btn-text-transform		:	uppercase;
+$btn-font-weight			:	bold;
+
+
+//Blockquote
+
+$bq-font-size		:	1.5em;
+$bq-font-style	:	italic;
+$bq-font-weight	:	bold;
+
+
+//Links
+
+$link-primary-color	:	$color-malibu;
+
+
+//Breakpoints
+
+$breakpoint-sm	:	1px;
+$breakpoint-md	:	768px;

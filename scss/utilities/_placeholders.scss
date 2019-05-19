@@ -1,0 +1,73 @@
+//==============================================================================
+//Placeholders
+//==============================================================================
+
+//Nav items
+
+%nav-item-disp {
+  @include mq(medium) {margin: 0 em($margin-sm);}
+  padding: em($padding-xs);
+}
+
+%nav-item-current {
+    border-radius: em($border-radius);
+    background-color: $color-primary;
+    color: white;
+    padding: em($padding-xs);
+    @include mq(medium) {margin: 0 em($margin-sm);}
+}
+
+
+//Headlines
+
+%hdln-prim {
+  font-size: $hdln-primary-font-size;
+  line-height: ($hdln-line/$hdln-primary-font-size);
+  margin-bottom: em($margin-lg);
+  margin-left: em($margin-sm);
+  color: $color-primary;
+  text-align: left;
+}
+
+%hdln-sec {
+  font-weight: $base__font-light;
+  font-size: $hdln-sec-font-size;
+  text-align: left;
+  // resetting user agent's h4 style
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+}
+
+
+//Buttons
+
+%btn {
+  border-radius: em($border-radius);
+  border-color: inherit;
+  padding: em($padding-sm) em($padding-xl);
+  margin-top: em($margin-lg);
+  color: $btn-font-color;
+  text-transform: $btn-text-transform;
+  align-items: center;
+  font-weight: $btn-font-weight;
+  @include flex;
+  @include mq(medium) {
+    margin-top: em($margin-sm);}
+}
+
+
+//Links 
+
+%link {
+  color: $link-primary-color;
+  font-weight: $bq-font-weight;
+  text-decoration: none;
+}
+
+
+//Images 
+
+%img-disp {
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,27 @@
+//==============================================================================
+//Navigation
+//==============================================================================
+
+.nav {
+  @include flex;
+  @include mq(medium) {
+    justify-content: center;
+  }
+  list-style: none;
+
+  @include e(item) {
+    @extend %nav-item-disp;
+    a {
+      text-decoration: none;
+      color: $base__font-color;
+        }
+    @include m(current) {
+      @extend %nav-item-disp;
+      @extend %nav-item-current;
+      a {
+       color: $btn-font-color;
+       text-decoration: none;
+      }
+    }
+  }
+}

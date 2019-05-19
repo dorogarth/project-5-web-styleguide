@@ -1,0 +1,26 @@
+//==============================================================================
+//Images
+//==============================================================================
+
+.img--logo {
+	@extend %img-disp;
+}
+
+.img--avatar {
+	@extend %img-disp;
+	width: em(150px);
+	padding: em($padding-sm);
+	@include mq(medium) {
+	  width: em(200px);}
+}
+
+.img--frame {
+	@extend %img-disp;
+	width: em(250px);
+	height: em(120px);
+	border: $border-xs solid $border-color-imgs;
+	padding: $padding-sm;
+	@include mq(medium) {
+		width: em(380px);
+		height: em(180px);}
+}

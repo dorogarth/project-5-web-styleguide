@@ -1,0 +1,24 @@
+//==============================================================================
+//Forms
+//==============================================================================
+
+.form {
+	width: 100%;
+}
+
+.form__input {
+		display: block;
+    border: none;
+    border-bottom: em($border-sm) solid $color-primary;
+    padding: em($padding-sm);
+    width: 80%;
+    margin: em($margin-sm) em($padding-md);
+}
+
+.form__label--hidden {
+	display: none;
+}
+
+::placeholder {
+	padding: em($border-sm);
+}
