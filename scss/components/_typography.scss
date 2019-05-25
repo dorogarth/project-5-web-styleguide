@@ -17,6 +17,7 @@
 	border-left: em($border-sm) solid $border-color-primary;
 	text-align: left;
 	font-size: $bq-font-size;
+	line-height: ($bq-line/$bq-font-size);
 	padding-left: em($padding-md);
 	font-style: $bq-font-style;
 }

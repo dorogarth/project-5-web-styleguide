@@ -8,9 +8,9 @@
 $base__font-color				: #808687;
 $base__font-family			: "Helvetica Neue", sans-serif;
 $base__font-size				: 16px;
-$base__line							: 24px;
+$base__line							: 26px;
 $base__font-light				: 300;
-$hdln-primary-font-size	: 2em;
+$hdln-primary-font-size	: 1.8em;
 $hdln-line							:	2.2em;
 $hdln-sec-font-size			: 1.1em;
 
@@ -57,7 +57,7 @@ $grid-theme-colors: (
 
 $border-xs						:	2px;
 $border-sm						:	5px;
-$border-radius				:	5px;
+$border-radius				:	7px;
 $border-color-primary	:	$color-primary;
 $border-color-imgs		: $color-grey;
 
@@ -69,11 +69,12 @@ $margin-sm	:	10px;
 $margin-md	:	20px;
 $margin-lg	:	30px;
 $margin-xl	:	50px;
+$margin-xxl	:	120px;
 
 
 //Padding
 
-$padding-xs	:	5px;
+$padding-xs	:	7.5px;
 $padding-sm	:	10px;
 $padding-md	:	20px;
 $padding-lg	:	30px;
@@ -97,7 +98,8 @@ $btn-font-weight			:	bold;
 
 //Blockquote
 
-$bq-font-size		:	1.5em;
+$bq-font-size		:	1.4em;
+$bq-line				:	1.7em;
 $bq-font-style	:	italic;
 $bq-font-weight	:	bold;
 

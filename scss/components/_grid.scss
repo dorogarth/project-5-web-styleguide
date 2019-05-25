@@ -1,12 +1,48 @@
 //==============================================================================
-//Grid
+//Grid style
 //==============================================================================
+
+
+// Calculate grid column widths
+
+.grid__col {
+  @include mq(medium) {
+  	@include g-columns;}
+}
+
+//Column styles
+
+[class^="grid__col--"] {
+  @include flex;
+  	padding: em($padding-sm) em($padding-lg);
+}
+
+.theme__colors.grid__ {
+	@include themeColors($grid-theme-colors) {
+		margin: em($margin-xs);
+	};
+}
+
+.grid__col--6 {
+	@include mq(medium) {
+	align-items: center;}
+}
+
+.grid__col--12 {
+	@include flex;
+	justify-content: space-evenly;
+}
+
+.theme__colors {
+	  border: em($border-xs) solid inherit;
+  	border-radius: 5px;
+}
 
 .grid__row {
 	@include flex;
 	text-align: left;
 	padding: em($padding-sm) 0;
-	margin-top: em($margin-lg);
+//	margin-top: em($margin-lg);
 	@include mq(medium) {
 		padding: em($padding-sm) em($padding-lg);
 		text-align: center;
